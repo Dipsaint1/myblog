@@ -35,7 +35,7 @@ const Posts = () => {
     <section id='blog'>
       <div className="blog-container">
         <div className="logo-wrapper">
-          <span className="logo">CYBER9JA</span>
+          <span className="logo">LOGO</span>
         </div>
 
         <nav className={!collapseBlogView ? 'blog-categories-container active' : 'blog-categories-container'}>
