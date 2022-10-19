@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <header id="header">
         <div className="logo-wrapper">
-          <span className="logo">CYBER9JA</span>
+          <span className="logo">LOGO</span>
         </div>
 
         { mobileView && 
