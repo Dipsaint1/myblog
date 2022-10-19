@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Herosection, Posts, Navbar, Footer } from '../components/Components';
+import {  Herosection, Posts } from '../components/Components';
 
 const Homepage = () => {
   return (
