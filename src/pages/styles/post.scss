@@ -1,0 +1,171 @@
+#post-wrapper{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+  padding: 10px;
+  align-content: center;
+  height: 300px;
+  width: 100%;
+  margin: 30px 0;
+
+  .post-image-wrapper{
+    grid-column: span 6;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .post-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post-details{
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .category{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #592EA9;
+  }
+
+  .title{
+
+    .link{
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #232536;
+      text-decoration: none;
+    }
+    
+    .link:hover{
+      text-decoration: underline;
+      color: rgb(67, 67, 223);
+    }
+  }
+
+  .description{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6D6E76;
+  }
+
+
+  @media screen and (max-width: 720px){
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    // justify-content: space-between;
+    margin: 20px 0;
+
+    .post-image-wrapper, .post-details{
+      width: 100%;
+      height: 100% !important;
+    }
+
+    .post-image{
+      width: 100%;
+      height: 100%;
+      // object-fit:cov;
+    }
+
+    .category{
+      font-size: 20px;
+    }
+
+    .title{
+      width: 100%;
+      
+
+      .link{
+        font-size: 25px;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .description{
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 540px){
+
+    .category{
+      font-size: 19px;
+    }
+
+    .title{
+      .link{
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px){
+
+    .category{
+      font-size: 18px;
+    }
+
+    .title{
+      .link{
+        font-size: 19px;
+      }
+    }
+
+    .description{
+      font-size: 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 360px){
+
+    .category{
+      font-size: 16px;
+    }
+
+    .title{
+
+      .link{
+        font-size: 18px;
+      }
+    }
+
+    .description{
+      font-size: 15px;
+    }
+
+  }
+
+  @media screen and (max-width: 360px){
+
+    .title{
+      .link{
+        font-size: 16px;
+      }
+    }
+
+    .description{
+      font-size: 14px;
+    }
+
+  }
+
+}
