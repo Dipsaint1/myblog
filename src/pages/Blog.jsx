@@ -5,7 +5,6 @@ import { BlogPosts } from '../contexts/BlogContext';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-
 const Posts = () => {
   const [mobileView, setMobileView] = useState(false);
   const {category, handleCategory, collapseBlogView, setCollapseBlogView } = BlogPosts();
